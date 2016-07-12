@@ -51,7 +51,7 @@ img {
     display: inline-block; }
   .menu a, .menu a:link, .menu a:hover, .menu a:active, .menu a:visited {
     text-decoration: none;
-    color: #fff;
+    color: #f4ee6f;
     padding: 2px;
     margin: 0 15px;
     font-size: 1.7em;
@@ -316,9 +316,10 @@ img {
 
 .flow-box, .contact-box {
   background: url(../images/flow.png) repeat !important;
-  padding: 30px 40px 10px 40px !important;
-  background-color: #313340 !important;
-  text-align: center; }
+  padding: 120px 40px 10px 40px !important;
+  background-color: #494b56 !important;
+  text-align: center;
+  height: 100%; }
 
 .flow {
   display: inline-block;
@@ -326,7 +327,7 @@ img {
   text-align: center;
   padding: 10px 10px 20px 10px; }
   .flow svg {
-    width: 120px; }
+    width: 150px; }
   .flow .flow-text {
     margin: 30px 0;
     font-size: 1.8em;

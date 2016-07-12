@@ -16,8 +16,7 @@ $(document).ready(function() {
 
 $(function(){  
 
-var wrapper = $("#wrapper"),
-    $menu = $("#menu");
+var $menu = $("#menu");
 
 $menu.on("click","a", function(){
     var $this = $(this),

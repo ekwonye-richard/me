@@ -5,9 +5,10 @@
 .flow-box{
 	background: url(../images/flow.png) repeat !important;
 	@extend .tool-box;
-	padding: 30px 40px 10px 40px !important;
+	padding: 120px 40px 10px 40px !important;
 	background-color: $softBox !important;
 	text-align: center;
+	height: 100%;
 }
 
 .flow{
@@ -17,7 +18,7 @@
 	padding: 10px 10px 20px 10px;
 
 	svg{
-		width: 120px;
+		width: 150px;
 	}
 
 	.flow-text{
