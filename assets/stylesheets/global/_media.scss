@@ -1,0 +1,91 @@
+$mobile: "(max-width: 768px)";
+$desktop: "(min-width: 768px)";
+
+
+@media #{$mobile} {
+	body{
+		font: {
+			size: 11px;
+		}
+
+	.top-screen{
+		height: 500px;
+	}
+
+	.map-canvas{
+		overflow: hidden;
+		svg{
+			width: 800px;
+			height: auto;
+		}
+	}
+
+	.f-row{
+		left: 70%;
+	}
+
+	.name{
+		display: block;
+	}
+
+	.des{
+		font: {
+			size: 1.4em !important;
+		}
+
+	}
+
+	.ux{
+		font: {
+			size: 1.7em !important;
+		}
+		
+	}
+
+	.flow{
+		width: 180px;
+	}
+
+	.p-items{
+		margin: 20px -160px;
+		padding: 1px 0;
+	}
+
+	.content{
+		padding: 20px;
+
+		p{
+		padding: 0 10px;
+		font: {
+			size: 1.2em;
+		}
+		}
+	}
+
+	.bx, .bx2{
+		display: none !important;
+	}
+
+	.tools-img{
+		display: block;	
+	}
+
+	.title{
+		font: {
+			size: 3em;
+			family: $mainFont;
+			weight: 800;
+		}
+
+		svg{
+			display: none;
+		}
+	}
+
+	.portfolio svg {
+	    width: 1.3em !important;
+	    margin: -2px 5px !important;
+	}
+
+	}
+}

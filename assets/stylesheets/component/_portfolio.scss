@@ -1,0 +1,113 @@
+.portfolio{
+	@extend .tool-box;
+	overflow: hidden;
+
+	.title{
+	padding:0 35px !important;
+	font: {
+		family: $mainFont;
+	}
+	}
+
+	svg{
+	width: 1.3em !important;
+    margin: -7px 5px !important;
+	}
+}
+
+.popcons{
+	background: url(../images/popcons_banner.jpg) no-repeat;
+	}
+
+.loral{
+	background: url(../images/loral.png) no-repeat;
+}
+
+.jokerrr{
+	background: url(../images/jokerrr.png) no-repeat;
+}
+
+.p-items{
+	@extend .tool-set;
+	text-align: center !important;
+
+	img{
+		width: 1200px;
+		height: auto;
+	}
+
+	.p-item{
+		margin-bottom: 30px;
+	}
+
+	.p-md{
+		@extend .p-wide;
+		width: 900px !important;
+		height: 444px !important;
+		text-align: left;
+		color: $darkColor;
+
+		.p-data{
+			bottom: -373px !important;
+		}
+	}
+
+	.p-wide{
+		background-size: 800px 466px;
+		width: 800px;
+		height: 466px;
+		margin: 20px 10px;
+		display: inline-block;
+	}
+
+	.p-data{
+		position: relative;
+		bottom: -330px;
+		left: 50px;
+	}
+
+	.p-name{
+		margin-top: -2em; 
+
+		font: {
+			size: 2.4em;
+			family: Fabrikat-Bold;
+		}
+	}
+
+	.p-details{
+		font: {
+			size: 1.3em;
+			family: Fabrikat-Regular;
+		}
+	}
+
+	.p-team{
+		font: {
+			size: 1.4em;
+			family: Fabrikat-Regular;
+		}
+	}
+
+	.p-url{
+		margin: 30px 0 5px 0;
+	}
+
+	.p-link{
+		background: #fff;
+		color: $darkColor;
+		padding: 8px 14px;
+		font: {
+			size: 1.3em;
+			family: Fabrikat-Regular;
+		}
+
+		a, a:link, a:hover, a:active, a:visited{
+			text-decoration: none;
+			color: $darkColor;
+			Font: {
+				family: Fabrikat-Black !important;
+			}
+		}
+	}
+}

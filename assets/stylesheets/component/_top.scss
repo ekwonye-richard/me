@@ -1,0 +1,102 @@
+.f-row{
+	height: 83%;
+	width: 40em;
+	left: 60%;
+	position: relative;
+	z-index: 250;
+}
+
+
+.map-canvas{
+	position: absolute;
+	z-index: 200;
+	height: inherit;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	svg{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.top-screen{
+	height: 620px;
+	overflow: hidden;
+	
+	.right-side{
+		float: right;
+		padding: 40px 5px;
+		width: 700px;
+	}
+
+	.grt{
+		@include RotateY(200px, -15deg);
+		margin: 16% 2%;
+		line-height: 0;
+
+		.hello{
+			font: {
+				size: 6.5em;
+				family: $blackFont;
+				line-height: 2;
+			}
+		}
+
+		#weather {
+			text-transform: uppercase;
+			line-height: 0;
+			font: {
+				size: 5em;
+			}
+			}
+
+		i{
+			font:{
+				family: Weather;
+				weight: normal;
+				style: normal;
+			}
+		}
+
+	}
+}
+
+
+.me{
+	margin: 0 40px;
+	position: relative;
+	z-index: 250;
+
+	span{
+		margin: 0 5px
+	}
+
+	.name{
+		font: {
+			size: 3em;
+		}
+	}
+	.des{
+		font: {
+			size: 1.3em;
+		}
+	}
+	.ux{
+		font: {
+			size: 1.6em;
+		}
+	}
+}
+
+.rch{
+	color: $ylw;
+	margin: 0 0 10px 0;
+	font:{
+		size: 2.3em;
+	}
+}
+
+

@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Metric-Black;
+    src: url(fonts/metric-black.ttf);
+}
+
+@font-face {
+	font-family: Metric-Light;
+	src: url(fonts/metric-light.ttf)
+}
+
+@font-face {
+	font-family: Fabrikat-Black;
+	src: url(fonts/Fabrikat-Black.ttf)
+}
+
+@font-face {
+	font-family: Fabrikat-Bold;
+	src: url(fonts/Fabrikat-Bold.ttf)
+}
+
+@font-face {
+	font-family: Fabrikat-Regular;
+	src: url(fonts/Fabrikat-Regular.ttf)
+}
+
+@font-face {
+	font-family: Weather;
+	src: url(fonts/artill_clean_icons-webfont.ttf)
+}
+
+$mainFont: Metric-Light;
+$blackFont: Metric-Black;
