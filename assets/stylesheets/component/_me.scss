@@ -1,3 +1,7 @@
+.about-me{
+	@include group(300%);
+}
+
 .content{
 	@extend .tool-box;
 	background: $lightBox !important;

@@ -1,3 +1,7 @@
+.approach{
+	@include group(100%);
+}
+
 .flow-box{
 	background: url(../images/flow.png) repeat !important;
 	@extend .tool-box;

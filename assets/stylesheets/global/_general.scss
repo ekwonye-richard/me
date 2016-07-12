@@ -1,5 +1,5 @@
 body{
-	overflow-x: hidden;
+	overflow: hidden;
 	background: $darkColor;
 	font: {
 		family: $mainFont;
@@ -22,4 +22,30 @@ img{
 
 .center{
 	text-align: center;
+}
+
+.menu{
+	position: fixed;
+	top: 10px;
+	width: 100%;
+	left: 0;
+	z-index: 900;
+	text-align: center;
+	padding: 10px 10px;
+
+	li{
+		display: inline-block;
+
+	}
+
+	a, a:link, a:hover, a:active, a:visited{
+			text-decoration: none;
+			color: #fff;
+		    padding: 2px;
+		    margin: 0 15px;
+			font: {
+				size: 1.7em;
+				family: Fabrikat-regular;
+			}
+		}
 }

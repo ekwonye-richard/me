@@ -6,6 +6,13 @@
   	transform: perspective($pers) rotateY($deg);
 }
 
+@mixin group ($pos){
+    position: absolute;
+    top: $pos;
+    width: 100%;
+    height: 100%;
+}
+
 @mixin prefix($property, $value, $prefixes: ()) {
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value;

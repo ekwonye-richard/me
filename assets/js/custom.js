@@ -14,6 +14,29 @@ $(document).ready(function() {
   });
 });
 
+$(function(){  
+
+var wrapper = $("#wrapper"),
+    $menu = $("#menu");
+
+$menu.on("click","a", function(){
+    var $this = $(this),
+        href = $this.attr("href"),
+      topY = $(href).offset().top;
+   
+    TweenMax.to($(window), 1, {
+        scrollTo:{
+            y: topY, 
+            autoKill: true
+        }, 
+        ease:Power3.easeOut 
+     });
+  
+  return false;
+});  
+  
+});
+
 var tm = new TimelineMax(),
     tmT = new TimelineMax(),
     tmM = new TimelineMax(),

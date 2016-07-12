@@ -1,3 +1,7 @@
+.top{
+	@include group(0);
+}
+
 .f-row{
 	height: 83%;
 	width: 40em;
@@ -66,7 +70,7 @@
 
 
 .me{
-	margin: 0 40px;
+	margin: 60px 40px;
 	position: relative;
 	z-index: 250;
 
@@ -76,17 +80,17 @@
 
 	.name{
 		font: {
-			size: 3em;
+			size: 3.3em;
 		}
 	}
 	.des{
 		font: {
-			size: 1.3em;
+			size: 1.5em;
 		}
 	}
 	.ux{
 		font: {
-			size: 1.6em;
+			size: 1.7em;
 		}
 	}
 }

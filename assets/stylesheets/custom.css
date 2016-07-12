@@ -22,7 +22,7 @@
   font-family: Weather;
   src: url(fonts/artill_clean_icons-webfont.ttf); }
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   background: #1e1f33;
   font-family: Metric-Light;
   font-size: 14px;
@@ -38,6 +38,24 @@ img {
 
 .center {
   text-align: center; }
+
+.menu {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  left: 0;
+  z-index: 900;
+  text-align: center;
+  padding: 10px 10px; }
+  .menu li {
+    display: inline-block; }
+  .menu a, .menu a:link, .menu a:hover, .menu a:active, .menu a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px;
+    margin: 0 15px;
+    font-size: 1.7em;
+    font-family: Fabrikat-regular; }
 
 @media (max-width: 768px) {
   body {
@@ -224,6 +242,12 @@ img {
 .icon-47:before {
   content: "S"; }
 
+.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
 .f-row {
   height: 83%;
   width: 40em;
@@ -267,22 +291,28 @@ img {
       font-style: normal; }
 
 .me {
-  margin: 0 40px;
+  margin: 60px 40px;
   position: relative;
   z-index: 250; }
   .me span {
     margin: 0 5px; }
   .me .name {
-    font-size: 3em; }
+    font-size: 3.3em; }
   .me .des {
-    font-size: 1.3em; }
+    font-size: 1.5em; }
   .me .ux {
-    font-size: 1.6em; }
+    font-size: 1.7em; }
 
 .rch {
   color: #f4ee6f;
   margin: 0 0 10px 0;
   font-size: 2.3em; }
+
+.approach {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%; }
 
 .flow-box, .contact-box {
   background: url(../images/flow.png) repeat !important;
@@ -303,6 +333,12 @@ img {
     font-family: Fabrikat-Regular; }
   .flow .sm {
     font-size: 0.7em; }
+
+.port {
+  position: absolute;
+  top: 200%;
+  width: 100%;
+  height: 100%; }
 
 .portfolio {
   overflow: hidden; }
@@ -368,6 +404,12 @@ img {
       text-decoration: none;
       color: #1e1f33;
       Font-family: Fabrikat-Black !important; }
+
+.about-me {
+  position: absolute;
+  top: 300%;
+  width: 100%;
+  height: 100%; }
 
 .content {
   background: rgba(255, 255, 255, 0.95) !important;
