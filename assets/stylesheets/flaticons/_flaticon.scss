@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 13/07/2016 09:04
+    Creation date: 13/07/2016 09:36
     */
 
     @font-face {
@@ -38,10 +38,12 @@
 
     .flaticon-folder:before { content: "\f100"; }
 .flaticon-home-icon-silhouette:before { content: "\f101"; }
-.flaticon-people:before { content: "\f102"; }
-.flaticon-squares:before { content: "\f103"; }
+.flaticon-navigate-arrows-pointing-to-down:before { content: "\f102"; }
+.flaticon-people:before { content: "\f103"; }
+.flaticon-squares:before { content: "\f104"; }
     
     $font-Flaticon-folder: "\f100";
     $font-Flaticon-home-icon-silhouette: "\f101";
-    $font-Flaticon-people: "\f102";
-    $font-Flaticon-squares: "\f103";
+    $font-Flaticon-navigate-arrows-pointing-to-down: "\f102";
+    $font-Flaticon-people: "\f103";
+    $font-Flaticon-squares: "\f104";

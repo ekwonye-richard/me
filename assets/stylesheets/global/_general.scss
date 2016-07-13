@@ -26,25 +26,40 @@ img{
 
 .menu{
 	position: fixed;
-	top: 10px;
-	width: 100%;
-	left: 0;
+	bottom: 5%;
+	right: 0;
 	z-index: 900;
 	text-align: center;
-	padding: 10px 10px;
+	padding: 20px;
 
 	li{
-		display: inline-block;
+		display: block;
+		color: $ylw;
+		padding: 4px;
 
+		span{
+			margin: -8px;
+			font: {
+				size: 1.3em;
+				family: Fabrikat-regular;			}
+		}
+
+		.scroll-icon{
+			font: {
+				size: 3em;
+				family: Fabrikat-regular;
+			}
+
+		}
 	}
 
 	a, a:link, a:hover, a:active, a:visited{
 			text-decoration: none;
 			color: $ylw;
-		    padding: 2px;
+		    padding: 4px;
 		    margin: 0 15px;
 			font: {
-				size: 1.7em;
+				size: 1.5em;
 				family: Fabrikat-regular;
 			}
 		}

@@ -85,6 +85,8 @@ TweenMax.to($("#loc"), 1, {
   repeat: -1
 })
 
+
+
 $("#music").hover(
   function() {
           tmM.to(eq3, .2, {

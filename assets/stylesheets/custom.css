@@ -41,20 +41,28 @@ img {
 
 .menu {
   position: fixed;
-  top: 10px;
-  width: 100%;
-  left: 0;
+  bottom: 5%;
+  right: 0;
   z-index: 900;
   text-align: center;
-  padding: 10px 10px; }
+  padding: 20px; }
   .menu li {
-    display: inline-block; }
+    display: block;
+    color: #f4ee6f;
+    padding: 4px; }
+    .menu li span {
+      margin: -8px;
+      font-size: 1.3em;
+      font-family: Fabrikat-regular; }
+    .menu li .scroll-icon {
+      font-size: 3em;
+      font-family: Fabrikat-regular; }
   .menu a, .menu a:link, .menu a:hover, .menu a:active, .menu a:visited {
     text-decoration: none;
     color: #f4ee6f;
-    padding: 2px;
+    padding: 4px;
     margin: 0 15px;
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-family: Fabrikat-regular; }
 
 @media (max-width: 768px) {
