@@ -25,17 +25,23 @@ img{
 }
 
 .menu{
+	box-shadow: rgba(0, 0, 0, 0.34902) 0px 5px 16px 0px;
+	background: $menuBox;
 	position: fixed;
-	bottom: 5%;
+	top: 40%;
 	right: 0;
 	z-index: 900;
 	text-align: center;
-	padding: 20px;
+
+	ul{	
+	padding: 0;
+	margin: 15px -7px 15px -22px;
+	}
 
 	li{
 		display: block;
 		color: $ylw;
-		padding: 4px;
+		padding: 4px 0px;
 
 		span{
 			margin: -8px;
@@ -59,7 +65,7 @@ img{
 		    padding: 4px;
 		    margin: 0 15px;
 			font: {
-				size: 1.5em;
+				size: 1.3em;
 				family: Fabrikat-regular;
 			}
 		}
