@@ -12,6 +12,11 @@ $(document).ready(function() {
       $("#weather").html('<p></p>');
     }
   });
+
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+
 });
 
 $(function(){  

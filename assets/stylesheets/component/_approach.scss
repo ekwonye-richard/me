@@ -1,14 +1,19 @@
 .approach{
 	@include group(100%);
+
+	.title{
+	color: $secColor;
+	}
 }
+
 
 .flow-box{
 	background: url(../images/flow.png) repeat !important;
 	@extend .tool-box;
-	padding: 120px 40px 10px 40px !important;
-	background-color: $softBox !important;
+	padding: 50px 40px 10px 40px !important;
+	background-color: $ylw !important;
 	text-align: center;
-	height: 100%;
+	min-height: 100%;
 }
 
 .flow{
@@ -23,6 +28,7 @@
 
 	.flow-text{
 		margin: 30px 0; 
+		color: $secColor;
 		font: {
 			size: 1.8em;
 			family: Fabrikat-Regular;

@@ -1,6 +1,6 @@
 body{
 	overflow: hidden;
-	background: $darkColor;
+	background: $secColor;
 	font: {
 		family: $mainFont;
 		size: 14px
@@ -26,7 +26,7 @@ img{
 
 .menu{
 	box-shadow: rgba(0, 0, 0, 0.34902) 0px 5px 16px 0px;
-	background: $menuBox;
+	background: $secColor;
 	position: fixed;
 	top: 40%;
 	right: 0;
@@ -69,4 +69,50 @@ img{
 				family: Fabrikat-regular;
 			}
 		}
+}
+
+.title{
+	font: {
+		family: Fabrikat-regular;
+		size: 3.5em;
+	}
+
+}
+
+.sub-group{
+	margin: 20px;
+	.title-sm{
+			font: {
+				family: Fabrikat-regular;
+				size: 1.3em;
+			}
+		}
+
+		hr{
+		height: 2px;
+	    width: 40px;
+	    background: $secColor;
+	    position: relative;
+	    border: 0;
+	    margin: 10px 0 0 0;
+		}
+}
+
+.group-name{
+	text-align: left;
+	margin-bottom: 20px;
+
+		hr{
+		height: 3px;
+	    width: 60px;
+	    background: $secColor;
+	    position: relative;
+	    border: 0;
+	    margin: 10px 0 0 0;
+		}
+}
+
+.flexslider{
+	background: inherit !important;
+	border: none !important;
 }

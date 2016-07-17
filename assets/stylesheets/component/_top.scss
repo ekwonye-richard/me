@@ -26,8 +26,50 @@
 }
 
 
+.top-corner{
+	margin: 100px 50px;
+
+	hr{
+		height: 3px;
+	    width: 230px;
+	    background: #fff;
+	    position: relative;
+	    border: 0;
+	    margin: 20px 0 0 0;
+		}
+}
+
+.grt{
+	margin: 0;
+	line-height: 0;
+
+	.hello{
+		font: {
+			size: 3.5em;
+			family: $blackFont;
+			line-height: 2;
+		}
+	}
+
+	#weather {
+		text-transform: uppercase;
+		line-height: 0;
+		font: {
+			size: 3em;
+		}
+		}
+
+	i{
+		font:{
+			family: Weather;
+			weight: normal;
+			style: normal;
+		}
+	}
+
+}
+
 .top-screen{
-	height: 620px;
 	overflow: hidden;
 	
 	.right-side{
@@ -36,36 +78,6 @@
 		width: 700px;
 	}
 
-	.grt{
-		@include RotateY(200px, -15deg);
-		margin: 16% 2%;
-		line-height: 0;
-
-		.hello{
-			font: {
-				size: 6.5em;
-				family: $blackFont;
-				line-height: 2;
-			}
-		}
-
-		#weather {
-			text-transform: uppercase;
-			line-height: 0;
-			font: {
-				size: 5em;
-			}
-			}
-
-		i{
-			font:{
-				family: Weather;
-				weight: normal;
-				style: normal;
-			}
-		}
-
-	}
 }
 
 
@@ -95,12 +107,6 @@
 	}
 }
 
-.rch{
-	color: $ylw;
-	margin: 0 0 10px 0;
-	font:{
-		size: 2.3em;
-	}
-}
+
 
 

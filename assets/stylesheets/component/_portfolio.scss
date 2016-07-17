@@ -5,6 +5,7 @@
 .portfolio{
 	@extend .tool-box;
 	overflow: hidden;
+	padding: 20px 0 !important;
 
 	.title{
 	padding:0 35px !important;
@@ -30,6 +31,16 @@
 .jokerrr{
 	background: url(../images/jokerrr.png) no-repeat;
 }
+
+.p-item{
+		height: 600px;
+
+			img{
+			height: 100% !important;
+			margin: auto;
+			}
+}
+
 
 .p-items{
 	@extend .tool-set;

@@ -4,20 +4,19 @@
 
 .content{
 	@extend .tool-box;
-	background: $lightBox !important;
-	color: $darkColor;
+	background: #fff !important;
+	color: $secColor;
 	font: {
 		size: 1.6em;
 		family: Fabrikat-Regular;
 	}
 
 	.title{
-		padding: 0 35px;
-
 		font: {
 			size: 2.2em;
 		}
 	}
+
 
 	p{
 		padding: 0 60px;
@@ -30,25 +29,19 @@
 	}
 }
 
+.toolname{
+	color: $darkColor;
+	border-bottom: 1px dotted #1c1d30;
+}
 
 
 .tool-box{
-	background: $darkBox;
+	background: $secColor;
 	margin: 0;
 	padding: 30px 40px;
 }
 
-.title{
-	font: {
-		family: $blackFont;
-		size: 3em;
-	}
 
-	svg{
-		width: 2em;
-    	margin: -22px 5px;
-	}
-}
 
 .tool-set{
 	margin: 20px 10px;
@@ -147,7 +140,7 @@
 
 .contact-box{
 	@extend .flow-box;
-	padding: 0 !important;
+	padding: 30px 0 !important;
 	font: {
 		size: 1.5em;
 		family: Fabrikat-Regular;
@@ -162,7 +155,18 @@
 
 	a, a:link, a:hover, a:active, a:visited{
 			text-decoration: none;
-			color: #fff;
+			color: $secColor;
+			font: {
+				size: 1.2em;
+			}
 		}
+}
+
+.rch{
+	color: $secColor;
+	margin: 0 0 10px 0;
+	font:{
+		size: 2.3em;
+	}
 }
 

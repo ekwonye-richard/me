@@ -23,7 +23,7 @@
   src: url(fonts/artill_clean_icons-webfont.ttf); }
 body {
   overflow: hidden;
-  background: #1e1f33;
+  background: #303337;
   font-family: Metric-Light;
   font-size: 14px;
   line-height: 1.3;
@@ -41,7 +41,7 @@ img {
 
 .menu {
   box-shadow: rgba(0, 0, 0, 0.34902) 0px 5px 16px 0px;
-  background: #58595f;
+  background: #303337;
   position: fixed;
   top: 40%;
   right: 0;
@@ -68,6 +68,38 @@ img {
     margin: 0 15px;
     font-size: 1.3em;
     font-family: Fabrikat-regular; }
+
+.title {
+  font-family: Fabrikat-regular;
+  font-size: 3.5em; }
+
+.sub-group {
+  margin: 20px; }
+  .sub-group .title-sm {
+    font-family: Fabrikat-regular;
+    font-size: 1.3em; }
+  .sub-group hr {
+    height: 2px;
+    width: 40px;
+    background: #303337;
+    position: relative;
+    border: 0;
+    margin: 10px 0 0 0; }
+
+.group-name {
+  text-align: left;
+  margin-bottom: 20px; }
+  .group-name hr {
+    height: 3px;
+    width: 60px;
+    background: #303337;
+    position: relative;
+    border: 0;
+    margin: 10px 0 0 0; }
+
+.flexslider {
+  background: inherit !important;
+  border: none !important; }
 
 @media (max-width: 768px) {
   body {
@@ -278,29 +310,38 @@ img {
     width: 100%;
     height: 100%; }
 
+.top-corner {
+  margin: 100px 50px; }
+  .top-corner hr {
+    height: 3px;
+    width: 230px;
+    background: #fff;
+    position: relative;
+    border: 0;
+    margin: 20px 0 0 0; }
+
+.grt {
+  margin: 0;
+  line-height: 0; }
+  .grt .hello {
+    font-size: 3.5em;
+    font-family: Metric-Black;
+    font-line-height: 2; }
+  .grt #weather {
+    text-transform: uppercase;
+    line-height: 0;
+    font-size: 3em; }
+  .grt i {
+    font-family: Weather;
+    font-weight: normal;
+    font-style: normal; }
+
 .top-screen {
-  height: 620px;
   overflow: hidden; }
   .top-screen .right-side {
     float: right;
     padding: 40px 5px;
     width: 700px; }
-  .top-screen .grt {
-    transform: perspective(200px) rotateY(-15deg);
-    margin: 16% 2%;
-    line-height: 0; }
-    .top-screen .grt .hello {
-      font-size: 6.5em;
-      font-family: Metric-Black;
-      font-line-height: 2; }
-    .top-screen .grt #weather {
-      text-transform: uppercase;
-      line-height: 0;
-      font-size: 5em; }
-    .top-screen .grt i {
-      font-family: Weather;
-      font-weight: normal;
-      font-style: normal; }
 
 .me {
   margin: 60px 40px;
@@ -315,23 +356,20 @@ img {
   .me .ux {
     font-size: 1.7em; }
 
-.rch {
-  color: #f4ee6f;
-  margin: 0 0 10px 0;
-  font-size: 2.3em; }
-
 .approach {
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%; }
+  .approach .title {
+    color: #303337; }
 
 .flow-box, .contact-box {
   background: url(../images/flow.png) repeat !important;
-  padding: 120px 40px 10px 40px !important;
-  background-color: #58595f !important;
+  padding: 50px 40px 10px 40px !important;
+  background-color: #f4ee6f !important;
   text-align: center;
-  height: 100%; }
+  min-height: 100%; }
 
 .flow {
   display: inline-block;
@@ -342,6 +380,7 @@ img {
     width: 150px; }
   .flow .flow-text {
     margin: 30px 0;
+    color: #303337;
     font-size: 1.8em;
     font-family: Fabrikat-Regular; }
   .flow .sm {
@@ -354,7 +393,8 @@ img {
   height: 100%; }
 
 .portfolio {
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 20px 0 !important; }
   .portfolio .title {
     padding: 0 35px !important;
     font-family: Metric-Light; }
@@ -371,6 +411,12 @@ img {
 .jokerrr {
   background: url(../images/jokerrr.png) no-repeat; }
 
+.p-item {
+  height: 600px; }
+  .p-item img {
+    height: 100% !important;
+    margin: auto; }
+
 .p-items {
   text-align: center !important; }
   .p-items img {
@@ -382,7 +428,7 @@ img {
     width: 900px !important;
     height: 444px !important;
     text-align: left;
-    color: #1e1f33; }
+    color: #111f2c; }
     .p-items .p-md .p-data {
       bottom: -373px !important; }
   .p-items .p-wide, .p-items .p-md {
@@ -409,13 +455,13 @@ img {
     margin: 30px 0 5px 0; }
   .p-items .p-link {
     background: #fff;
-    color: #1e1f33;
+    color: #111f2c;
     padding: 8px 14px;
     font-size: 1.3em;
     font-family: Fabrikat-Regular; }
     .p-items .p-link a, .p-items .p-link a:link, .p-items .p-link a:hover, .p-items .p-link a:active, .p-items .p-link a:visited {
       text-decoration: none;
-      color: #1e1f33;
+      color: #111f2c;
       Font-family: Fabrikat-Black !important; }
 
 .about-me {
@@ -425,31 +471,27 @@ img {
   height: 100%; }
 
 .content {
-  background: rgba(255, 255, 255, 0.95) !important;
-  color: #1e1f33;
+  background: #fff !important;
+  color: #303337;
   font-size: 1.6em;
   font-family: Fabrikat-Regular; }
   .content .title {
-    padding: 0 35px;
     font-size: 2.2em; }
   .content p {
     padding: 0 60px; }
     .content p a, .content p a:link, .content p a:hover, .content p a:active, .content p a:visited {
       text-decoration: none;
-      color: #1e1f33;
+      color: #111f2c;
       border-bottom: 1px dotted #1c1d30; }
 
+.toolname {
+  color: #111f2c;
+  border-bottom: 1px dotted #1c1d30; }
+
 .tool-box, .flow-box, .contact-box, .portfolio, .content {
-  background: #1f2035;
+  background: #303337;
   margin: 0;
   padding: 30px 40px; }
-
-.title {
-  font-family: Metric-Black;
-  font-size: 3em; }
-  .title svg {
-    width: 2em;
-    margin: -22px 5px; }
 
 .tool-set, .p-items {
   margin: 20px 10px;
@@ -528,7 +570,7 @@ img {
   display: none; }
 
 .contact-box {
-  padding: 0 !important;
+  padding: 30px 0 !important;
   font-size: 1.5em;
   font-family: Fabrikat-Regular; }
 
@@ -537,6 +579,12 @@ img {
   margin: 10px 8%; }
   .cont-data a, .cont-data a:link, .cont-data a:hover, .cont-data a:active, .cont-data a:visited {
     text-decoration: none;
-    color: #fff; }
+    color: #303337;
+    font-size: 1.2em; }
+
+.rch {
+  color: #303337;
+  margin: 0 0 10px 0;
+  font-size: 2.3em; }
 
 /*# sourceMappingURL=custom.css.map */
