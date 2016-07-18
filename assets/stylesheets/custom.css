@@ -286,6 +286,15 @@ img {
 .icon-47:before {
   content: "S"; }
 
+.morning .top, .midday .top {
+  background: url(../images/day-header.jpg) no-repeat center center fixed; }
+
+.evening .top {
+  background: url(../images/night-header.jpg) no-repeat center center fixed; }
+
+.midnight .top {
+  background: url(../images/midnight-header.jpg) no-repeat center center fixed; }
+
 .top {
   position: absolute;
   top: 0;
@@ -310,8 +319,18 @@ img {
     width: 100%;
     height: 100%; }
 
+.day-cycle {
+  position: absolute;
+  right: 150px;
+  top: 100px;
+  height: 150px;
+  width: 150px; }
+  .day-cycle svg {
+    width: 100%;
+    height: 100%; }
+
 .top-corner {
-  margin: 100px 50px; }
+  margin: 80px 50px 190px; }
   .top-corner hr {
     height: 3px;
     width: 230px;
@@ -329,8 +348,9 @@ img {
     font-line-height: 2; }
   .grt #weather {
     text-transform: uppercase;
-    line-height: 0;
-    font-size: 3em; }
+    line-height: 0; }
+    .grt #weather h2 {
+      font-size: 3.2em; }
   .grt i {
     font-family: Weather;
     font-weight: normal;
@@ -344,17 +364,18 @@ img {
     width: 700px; }
 
 .me {
-  margin: 60px 40px;
-  position: relative;
-  z-index: 250; }
+  margin: 0 40px;
+  text-align: center; }
   .me span {
-    margin: 0 5px; }
+    margin: 0 5px;
+    display: block; }
   .me .name {
-    font-size: 3.3em; }
+    font-size: 4.4em; }
   .me .des {
-    font-size: 1.5em; }
-  .me .ux {
-    font-size: 1.7em; }
+    font-size: 2.7em;
+    font-weight: 800; }
+  .me .loc {
+    font-size: 2.4em; }
 
 .approach {
   position: absolute;

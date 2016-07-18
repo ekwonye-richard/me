@@ -1,0 +1,15 @@
+.midday{
+	@extend .morning;
+}
+
+.morning{
+	@include timespec('day-header');
+}
+
+.evening{
+	@include timespec('night-header');
+}
+
+.midnight{
+	@include timespec('midnight-header');
+}

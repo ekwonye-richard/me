@@ -1,4 +1,16 @@
 $(document).ready(function() {
+
+  var d = new Date();
+  var n = d.getHours();
+  if (n > 20 || n < 6)
+    document.body.className = "midnight";
+  else if (n > 12 && n < 20)
+    document.body.className = "midday";
+  else if (n > 19 && n < 21)
+    document.body.className = "evening";
+  else
+    document.body.className = "morning";
+
   $.simpleWeather({
     location: 'Lagos',
     woeid: '',
@@ -78,6 +90,12 @@ var tm = new TimelineMax(),
             TweenLite.set(eq4, {opacity: 0});
             TweenLite.set(eq5, {opacity: 0});
             TweenLite.set(eq5, {opacity: 0});
+
+            TweenLite.set($("#snoozing"), {opacity: 0});
+            TweenLite.set($("#research"), {opacity: 0});
+            TweenLite.set($("#review"), {opacity: 0});
+            TweenLite.set($("#design"), {opacity: 0});
+
             TweenLite.set($(".p-md"), {'background-size': '900px 444px', '-webkit-filter': 'grayscale(70%)', 'filter': 'grayscale(70%)'});
             TweenLite.set($(".p-wide"), {'background-size': '800px 466px', '-webkit-filter': 'grayscale(70%)', 'filter': 'grayscale(70%)'});
             TweenLite.set($("#loc"), {'stroke': '#f4ee6f', 'stroke-width': '1'});

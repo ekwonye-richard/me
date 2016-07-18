@@ -42,3 +42,11 @@
     background-image:         linear-gradient(left, $start-colour, $end-colour);
     filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
 }
+
+$imgPath: '../images';
+
+@mixin timespec ($bg){
+    .top{
+        background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
+    }
+}
