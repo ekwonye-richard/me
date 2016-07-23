@@ -20,19 +20,10 @@ $desktop: "(min-width: 768px)";
 		position: relative;
 		height: auto;
 		top: auto;
-		overflow: scroll;
 	}
 
 	.top, .about-me{
 		height: 650px !important;
-	}
-
-	.me-data{
-		height: auto;
-	}
-	
-	.contact-box{
-		min-height: auto;
 	}
 
 	.top-screen{

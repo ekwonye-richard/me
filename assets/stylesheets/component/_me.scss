@@ -91,13 +91,14 @@
 	top: 0;
 	left: 0;
 	background: $whtMask;
-	z-index: 610;
+	z-index: 300;
 }
 
 .me-data{
-	z-index: 650;
+	z-index: 400;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    height: 250%;
 }
