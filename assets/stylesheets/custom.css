@@ -136,9 +136,14 @@ g, path {
     body .top, body .approach, body .port, body .about-me {
       position: relative;
       height: auto;
-      top: auto; }
+      top: auto;
+      overflow: scroll; }
     body .top, body .about-me {
       height: 650px !important; }
+    body .me-data {
+      height: auto; }
+    body .contact-box {
+      min-height: auto; }
     body .top-screen {
       height: 500px; }
     body .map-canvas {
@@ -714,14 +719,13 @@ g, path {
   top: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.91);
-  z-index: 300; }
+  z-index: 610; }
 
 .me-data {
-  z-index: 400;
+  z-index: 650;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 250%; }
+  width: 100%; }
 
 /*# sourceMappingURL=custom.css.map */
