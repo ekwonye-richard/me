@@ -33,8 +33,13 @@ body {
 img {
   max-width: 95%; }
 
+g, path {
+  pointer-events: all; }
+
 .ylw {
   color: #f4ee6f; }
+  .ylw hr {
+    background: #f4ee6f !important; }
 
 .center {
   text-align: center; }
@@ -71,7 +76,7 @@ img {
 
 .title {
   font-family: Fabrikat-regular;
-  font-size: 3.5em; }
+  font-size: 2.3em; }
 
 .sub-group {
   margin: 20px; }
@@ -88,10 +93,10 @@ img {
 
 .group-name {
   text-align: left;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   .group-name hr {
-    height: 3px;
-    width: 60px;
+    height: 2px;
+    width: 100px;
     background: #303337;
     position: relative;
     border: 0;
@@ -100,6 +105,27 @@ img {
 .flexslider {
   background: inherit !important;
   border: none !important; }
+
+#half-moon, #full-moon, #sunrise, #sunny {
+  cursor: pointer; }
+
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/loader.svg) center no-repeat #222121; }
 
 @media (max-width: 768px) {
   body {
@@ -129,7 +155,7 @@ img {
       body .content p {
         padding: 0 10px;
         font-size: 1.2em; }
-    body .bx, body .tool-set .bx2, .tool-set body .bx2, body .p-items .bx2, .p-items body .bx2, body .bx2 {
+    body .bx, body .bx2 {
       display: none !important; }
     body .tools-img {
       display: block; }
@@ -286,20 +312,15 @@ img {
 .icon-47:before {
   content: "S"; }
 
-.morning .top, .midday .top {
-  background: url(../images/day-header.jpg) no-repeat center center fixed; }
-
-.evening .top {
-  background: url(../images/night-header.jpg) no-repeat center center fixed; }
-
-.midnight .top {
-  background: url(../images/midnight-header.jpg) no-repeat center center fixed; }
+.midday {
+  /**	@extend .morning; */ }
 
 .top {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .f-row {
   height: 83%;
@@ -321,10 +342,10 @@ img {
 
 .day-cycle {
   position: absolute;
-  right: 150px;
-  top: 100px;
-  height: 150px;
-  width: 150px; }
+  right: 140px;
+  top: 60px;
+  height: 200px;
+  width: 200px; }
   .day-cycle svg {
     width: 100%;
     height: 100%; }
@@ -357,7 +378,10 @@ img {
     font-style: normal; }
 
 .top-screen {
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 800;
+  position: absolute;
+  width: 100%; }
   .top-screen .right-side {
     float: right;
     padding: 40px 5px;
@@ -377,20 +401,62 @@ img {
   .me .loc {
     font-size: 2.4em; }
 
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.19);
+  z-index: 600; }
+
+#day-txt {
+  text-anchor: middle; }
+
+.day {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  opacity: 0;
+  background: url(../images/day-header.jpg) no-repeat center center fixed; }
+
+.even {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 380;
+  opacity: 0;
+  background: url(../images/night-header.jpg) no-repeat center center fixed; }
+
+.nigh {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 360;
+  opacity: 1;
+  background: url(../images/midnight-header.jpg) no-repeat center center fixed; }
+
 .approach {
   position: absolute;
   top: 100%;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
   .approach .title {
     color: #303337; }
 
 .flow-box, .contact-box {
   background: url(../images/flow.png) repeat !important;
-  padding: 50px 40px 10px 40px !important;
+  padding: 30px 40px 10px 40px !important;
   background-color: #f4ee6f !important;
-  text-align: center;
-  min-height: 100%; }
+  text-align: center; }
 
 .flow {
   display: inline-block;
@@ -398,7 +464,7 @@ img {
   text-align: center;
   padding: 10px 10px 20px 10px; }
   .flow svg {
-    width: 150px; }
+    width: 147px; }
   .flow .flow-text {
     margin: 30px 0;
     color: #303337;
@@ -407,11 +473,31 @@ img {
   .flow .sm {
     font-size: 0.7em; }
 
+.process-note {
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.95); }
+
+.note {
+  padding: 20px 20%;
+  color: #303337;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: georgia, Fabrikat-Regular; }
+
+.process-logo {
+  display: inline-block;
+  margin: 8px; }
+  .process-logo img {
+    width: 55px; }
+
 .port {
   position: absolute;
   top: 200%;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  color: #000; }
 
 .portfolio {
   overflow: hidden;
@@ -423,20 +509,49 @@ img {
     width: 1.3em !important;
     margin: -7px 5px !important; }
 
+.p-item {
+  height: 550px; }
+  .p-item span {
+    display: block; }
+
+.p-left {
+  position: absolute;
+  top: 50px;
+  padding: 70px 0 0 90px;
+  font-size: 3.3em;
+  z-index: 100;
+  color: #000; }
+
+.view-proj {
+  font-size: .7em;
+  cursor: pointer;
+  width: 4.9em;
+  border-bottom: 1px dotted;
+  color: #000;
+  text-decoration: none; }
+
+.p-right {
+  position: absolute;
+  margin-left: 18vw;
+  z-index: 99;
+  width: 82vw;
+  height: 100%; }
+
 .popcons {
-  background: url(../images/popcons_banner.jpg) no-repeat; }
+  background: url(../images/popcons_banner.jpg) no-repeat;
+  background-blend-mode: luminosity; }
 
 .loral {
-  background: url(../images/loral.png) no-repeat; }
+  background: url(../images/loral_banner.jpg) no-repeat;
+  background-blend-mode: luminosity; }
 
 .jokerrr {
-  background: url(../images/jokerrr.png) no-repeat; }
+  background: url(../images/jokerrr_banner.jpg) no-repeat;
+  background-blend-mode: luminosity; }
 
-.p-item {
-  height: 600px; }
-  .p-item img {
-    height: 100% !important;
-    margin: auto; }
+.citidrive {
+  background: url(../images/citidrive_banner.jpg) no-repeat;
+  background-blend-mode: luminosity; }
 
 .p-items {
   text-align: center !important; }
@@ -485,21 +600,56 @@ img {
       color: #111f2c;
       Font-family: Fabrikat-Black !important; }
 
+.port-top {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 500; }
+  .port-top hr {
+    margin: 10px 0 0 35px; }
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.19);
+  color: #000;
+  font-size: 1.4em; }
+
+.pop-content {
+  width: 1000px;
+  background: #fff;
+  max-width: 95%;
+  min-height: 90%;
+  margin: 2% auto auto auto;
+  border: 3px solid #fff;
+  border-radius: 7px; }
+
+.pop-close {
+  text-align: right;
+  padding: 10px 5px; }
+  .pop-close .close {
+    cursor: pointer;
+    border-bottom: 1px dotted; }
+
 .about-me {
   position: absolute;
   top: 300%;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .content {
-  background: #fff !important;
   color: #303337;
-  font-size: 1.6em;
-  font-family: Fabrikat-Regular; }
-  .content .title {
-    font-size: 2.2em; }
+  margin-bottom: 40px !important; }
   .content p {
-    padding: 0 60px; }
+    padding: 0 60px;
+    font-size: 1.45em;
+    font-family: Georgia, Fabrikat-Regular; }
     .content p a, .content p a:link, .content p a:hover, .content p a:active, .content p a:visited {
       text-decoration: none;
       color: #111f2c;
@@ -510,7 +660,6 @@ img {
   border-bottom: 1px dotted #1c1d30; }
 
 .tool-box, .flow-box, .contact-box, .portfolio, .content {
-  background: #303337;
   margin: 0;
   padding: 30px 40px; }
 
@@ -518,82 +667,12 @@ img {
   margin: 20px 10px;
   padding: 1px 10px;
   text-align: center; }
-  .tool-set .bx, .p-items .bx, .tool-set .bx2, .p-items .bx2 {
-    background-size: 130px 130px;
-    width: 130px;
-    height: 130px;
-    display: inline-block;
-    margin: 5px 15px;
-    background-blend-mode: screen;
-    -webkit-filter: grayscale(5%);
-    -moz-filter: grayscale(5%);
-    -o-filter: grayscale(5%);
-    -ms-filter: grayscale(5%);
-    filter: grayscale(5%); }
-  .tool-set .bx2, .p-items .bx2 {
-    background-size: 85px 85px;
-    width: 85px;
-    height: 85px; }
-
-.angular {
-  background: url(../images/angularJs.png) no-repeat;
-  transform: rotate(12deg); }
-
-.greensock {
-  background: url(../images/greensock.png) no-repeat;
-  transform: rotate(-25deg); }
-
-.sass {
-  background: url(../images/sass.png) no-repeat;
-  transform: translateX(-11px) rotate(-3deg); }
-
-.adobe {
-  background: url(../images/adobe.png) no-repeat; }
-
-.bootstrap {
-  background: url(../images/bootstrap.png) no-repeat;
-  transform: rotate(33deg) translateX(10px); }
-
-.semantic-ui {
-  background: url(../images/semanticUi.png) no-repeat; }
-
-.wordpress {
-  background: url(../images/wordpress.png) no-repeat;
-  transform: rotate(-22deg); }
-
-.marvel {
-  background: url(../images/marvel.png) no-repeat; }
-
-.magento {
-  background: url(../images/magento.png) no-repeat;
-  transform: translateX(-13px) rotate(-11deg); }
-
-.uxpin {
-  background: url(../images/uxpin.png) no-repeat;
-  transform: rotate(6deg); }
-
-.html5 {
-  background: url(../images/html5.png) no-repeat;
-  transform: rotate(-32deg); }
-
-.css3 {
-  background: url(../images/css3.png) no-repeat;
-  transform: translateY(20px); }
-
-.javascript {
-  background: url(../images/javascript.png) no-repeat; }
-
-.jquery {
-  background: url(../images/jquery.png) no-repeat;
-  transform: rotate(9deg); }
-
-.tools-img {
-  display: none; }
 
 .contact-box {
   padding: 30px 0 !important;
   font-size: 1.5em;
-  font-family: Fabrikat-Regular; }
+  font-family: Fabrikat-Regular;
+  min-height: 50%; }
 
 .cont-data {
   display: inline-block;
@@ -607,5 +686,33 @@ img {
   color: #303337;
   margin: 0 0 10px 0;
   font-size: 2.3em; }
+
+.me-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  opacity: 0;
+  background: url(../images/me-bg.jpg) no-repeat center center fixed;
+  opacity: 1 !important; }
+
+.wht-mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.91);
+  z-index: 300; }
+
+.me-data {
+  z-index: 400;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250%; }
 
 /*# sourceMappingURL=custom.css.map */

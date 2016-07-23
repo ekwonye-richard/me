@@ -10,10 +10,9 @@
 .flow-box{
 	background: url(../images/flow.png) repeat !important;
 	@extend .tool-box;
-	padding: 50px 40px 10px 40px !important;
+	padding: 30px 40px 10px 40px !important;
 	background-color: $ylw !important;
 	text-align: center;
-	min-height: 100%;
 }
 
 .flow{
@@ -23,7 +22,7 @@
 	padding: 10px 10px 20px 10px;
 
 	svg{
-		width: 150px;
+		width: 147px;
 	}
 
 	.flow-text{
@@ -39,5 +38,29 @@
 		font:{
 			size: 0.7em;
 		}
+	}
+}
+
+.process-note{
+	min-height: 400px;
+	background: $transWhite;
+}
+
+.note{
+	padding: 20px 20%;
+	color: $secColor;
+	text-align: center;
+	font: {
+		size: 1.5em;
+		family: georgia, Fabrikat-Regular;
+	}
+}
+
+.process-logo{
+	display: inline-block;
+    margin: 8px;
+
+	img{
+		width: 55px;
 	}
 }

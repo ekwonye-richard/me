@@ -1,15 +1,46 @@
+$(window).load(function() {
+    $(".loading").fadeOut("fast");
+  });
+
 $(document).ready(function() {
 
   var d = new Date();
   var n = d.getHours();
-  if (n > 20 || n < 6)
-    document.body.className = "midnight";
-  else if (n > 12 && n < 20)
-    document.body.className = "midday";
-  else if (n > 19 && n < 21)
-    document.body.className = "evening";
-  else
-    document.body.className = "morning";
+  if (n > 20 || n < 6){
+    $("body").addClass("midnight");
+
+    $("#day-txt").text('Snoozing');
+  }
+  else if (n > 12 && n < 19){
+    $("body").addClass("midday");
+
+    TweenMax.to($(".day"), 1.5, {
+   opacity: 1
+    })
+    TweenMax.to($(".even"), .5, {
+   opacity: 1
+    })
+    $("#day-txt").text('Designing');
+  }
+  else if (n > 18 && n < 21){
+    $("body").addClass("evening");
+
+    TweenMax.to($(".even"), 1.5, {
+   opacity: 1
+    })
+    $("#day-txt").text('Reviewing');
+  }
+  else{
+    $("body").addClass("morning");
+
+    TweenMax.to($(".day"), 1.5, {
+   opacity: 1
+    })
+    TweenMax.to($(".even"), .5, {
+   opacity: 1
+    })
+    $("#day-txt").text('Researching');
+  }
 
   $.simpleWeather({
     location: 'Lagos',
@@ -50,14 +81,41 @@ $menu.on("click","a", function(){
   
   return false;
 });  
+
+TweenLite.set($(".pop-contents"), {scale: 0.8});
+
+var $pop = $(".p-left");
+
+$pop.on("click","a", function(){
+    var $this = $(this),
+        href = $this.attr("href"),
+        targ = $(href);
+        cont = targ.find(".pop-content");
+   
+    TweenMax.to(targ, .5, {
+        'display': 'block',
+     });
+
+    TweenMax.to(cont, 2, {
+        scale: 1,
+        ease: Elastic.easeOut 
+     });
+  
+  return false;
+});  
   
 });
+
+
+
 
 var tm = new TimelineMax(),
     tmT = new TimelineMax(),
     tmM = new TimelineMax(),
     tmS = new TimelineMax(),
     tmL = new TimelineMax(),
+    tmD = new TimelineMax(),
+
     tmLoop = new TimelineMax({repeat: 2}),
     grt = $(".grt"),
     tool = $(".tool"),
@@ -91,11 +149,6 @@ var tm = new TimelineMax(),
             TweenLite.set(eq5, {opacity: 0});
             TweenLite.set(eq5, {opacity: 0});
 
-            TweenLite.set($("#snoozing"), {opacity: 0});
-            TweenLite.set($("#research"), {opacity: 0});
-            TweenLite.set($("#review"), {opacity: 0});
-            TweenLite.set($("#design"), {opacity: 0});
-
             TweenLite.set($(".p-md"), {'background-size': '900px 444px', '-webkit-filter': 'grayscale(70%)', 'filter': 'grayscale(70%)'});
             TweenLite.set($(".p-wide"), {'background-size': '800px 466px', '-webkit-filter': 'grayscale(70%)', 'filter': 'grayscale(70%)'});
             TweenLite.set($("#loc"), {'stroke': '#f4ee6f', 'stroke-width': '1'});
@@ -108,6 +161,64 @@ TweenMax.to($("#loc"), 1, {
   repeat: -1
 })
 
+$('.close').click(
+  function() {
+  TweenMax.to($(".popup"), 0, {
+   'display': 'none',
+    });
+   TweenMax.to($(".pop-content"), .5, {
+   scale: 0.8,
+    });
+
+  });
+
+$('#half-moon').click(
+  function() {
+  tmD.to($(".day"), 1.5, {
+   opacity: 0
+    })
+  .to($(".even"), 1.5, {
+   opacity: 1
+    })
+
+  $("#day-txt").text('Reviewing');
+  });
+
+$('#full-moon').click(
+  function() {
+  tmD.to($(".day"), 1.5, {
+   opacity: 0
+    })
+  .to($(".even"), 1.5, {
+   opacity: 0
+    })
+
+  $("#day-txt").text('Snoozing');
+  });
+
+$('#sunny').click(
+  function() {
+  tmD.to($(".day"), 3, {
+   opacity: 1
+    })
+  .to($(".even"), .5, {
+   opacity: 1
+    })
+
+  $("#day-txt").text('Designing');
+  });
+
+$('#sunrise').click(
+  function() {
+  tmD.to($(".day"), 3, {
+   opacity: 1
+    })
+  .to($(".even"), .5, {
+   opacity: 1
+    })
+
+  $("#day-txt").text('Researching');
+  });
 
 
 $("#music").hover(
@@ -310,19 +421,6 @@ $(".p-md").hover(
           }
 );
 
-
-grt.hover(
-          function() {
-            TweenLite.to(grt, 4, {
-              rotationY: -8
-            });
-          },
-          function() {
-            TweenLite.to(grt, 4, {
-              rotationY: -15
-            });
-          }
-        );
 
 toolBox.hover(
         function(){

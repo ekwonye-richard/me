@@ -11,6 +11,7 @@
     top: $pos;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 @mixin prefix($property, $value, $prefixes: ()) {
@@ -49,4 +50,20 @@ $imgPath: '../images';
     .top{
         background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
     }
+}
+
+@mixin day-bg($bg, $index, $opa){
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: $index;
+    opacity: $opa;
+    background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
+}
+
+@mixin port-bg($bg){
+    background: url(#{$imgPath}/#{$bg}.jpg) no-repeat;
+    background-blend-mode: luminosity;
 }

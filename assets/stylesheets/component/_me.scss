@@ -4,22 +4,17 @@
 
 .content{
 	@extend .tool-box;
-	background: #fff !important;
 	color: $secColor;
-	font: {
-		size: 1.6em;
-		family: Fabrikat-Regular;
-	}
-
-	.title{
-		font: {
-			size: 2.2em;
-		}
-	}
+	margin-bottom: 40px !important;
 
 
 	p{
 		padding: 0 60px;
+
+		font: {
+		size: 1.45em;
+		family: Georgia, Fabrikat-Regular;
+	}
 
 		a, a:link, a:hover, a:active, a:visited{
 			text-decoration: none;
@@ -36,7 +31,6 @@
 
 
 .tool-box{
-	background: $secColor;
 	margin: 0;
 	padding: 30px 40px;
 }
@@ -48,94 +42,8 @@
 	padding: 1px 10px; 
 	text-align: center;
 
-
-	.bx{
-		background-size: 130px 130px;
-		width: 130px;
-		height: 130px;
-		display: inline-block;
-		margin: 5px 15px;
-		background-blend-mode: screen;
-		@include prefix(filter, grayscale(5%), webkit moz o ms);
 	}
 
-	.bx2{
-		@extend .bx;
-		background-size: 85px 85px;
-		width: 85px;
-		height: 85px;
-	}
-}
-
-.angular{
-	background: url(../images/angularJs.png) no-repeat;
-	transform: rotate(12deg);
-}
-
-.greensock{
-	background: url(../images/greensock.png) no-repeat;
-	transform: rotate(-25deg);
-}
-
-.sass{
-	background: url(../images/sass.png) no-repeat;
-	transform: translateX(-11px) rotate(-3deg);
-}
-
-.adobe{
-	background: url(../images/adobe.png) no-repeat;
-}
-
-.bootstrap{
-	background: url(../images/bootstrap.png) no-repeat;
-	transform: rotate(33deg) translateX(10px);
-}
-
-.semantic-ui{
-	background: url(../images/semanticUi.png) no-repeat;
-}
-
-.wordpress{
-	background: url(../images/wordpress.png) no-repeat;
-	transform: rotate(-22deg);
-}
-
-.marvel{
-	background: url(../images/marvel.png) no-repeat;
-}
-
-.magento{
-	background: url(../images/magento.png) no-repeat;
-	transform: translateX(-13px) rotate(-11deg);
-}
-
-.uxpin{
-	background: url(../images/uxpin.png) no-repeat;
-	transform: rotate(6deg);
-}
-
-.html5{
-	background: url(../images/html5.png) no-repeat;
-	transform: rotate(-32deg);
-}
-
-.css3{
-	background: url(../images/css3.png) no-repeat;
-	transform: translateY(20px);
-}
-
-.javascript{
-	background: url(../images/javascript.png) no-repeat;
-}
-
-.jquery{
-	background: url(../images/jquery.png) no-repeat;
-	transform: rotate(9deg);
-}
-
-.tools-img{
-	display: none;
-}
 
 
 .contact-box{
@@ -145,6 +53,7 @@
 		size: 1.5em;
 		family: Fabrikat-Regular;
 	}
+	min-height: 50%;
 
 
 }
@@ -170,3 +79,26 @@
 	}
 }
 
+.me-bg{
+	@include day-bg('me-bg', 200, 0);
+	opacity: 1 !important;
+}
+
+.wht-mask{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: $whtMask;
+	z-index: 300;
+}
+
+.me-data{
+	z-index: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+}

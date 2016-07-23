@@ -151,13 +151,15 @@ html[xmlns] .flexslider .slides {
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
+  padding: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 10px;
+  left: 30px;
+  padding: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;

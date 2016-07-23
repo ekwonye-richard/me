@@ -15,9 +15,16 @@ img{
 	max-width: 95%;
 }
 
+g, path{
+	pointer-events:all;
+}
 
 .ylw{
 	color: $ylw;
+
+	hr{
+		background: $ylw !important;
+	}
 }
 
 .center{
@@ -74,7 +81,7 @@ img{
 .title{
 	font: {
 		family: Fabrikat-regular;
-		size: 3.5em;
+		size: 2.3em;
 	}
 
 }
@@ -100,11 +107,11 @@ img{
 
 .group-name{
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 
 		hr{
-		height: 3px;
-	    width: 60px;
+		height: 2px;
+	    width: 100px;
 	    background: $secColor;
 	    position: relative;
 	    border: 0;
@@ -115,4 +122,20 @@ img{
 .flexslider{
 	background: inherit !important;
 	border: none !important;
+}
+
+#half-moon, #full-moon, #sunrise, #sunny{
+	cursor: pointer;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.loading {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader.svg) center no-repeat $warmBox;
 }

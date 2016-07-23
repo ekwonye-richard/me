@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 13/07/2016 09:36
+    Creation date: 21/07/2016 00:41
     */
 
     @font-face {
@@ -36,14 +36,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-folder:before { content: "\f100"; }
-.flaticon-home-icon-silhouette:before { content: "\f101"; }
-.flaticon-navigate-arrows-pointing-to-down:before { content: "\f102"; }
-.flaticon-people:before { content: "\f103"; }
-.flaticon-squares:before { content: "\f104"; }
+    .flaticon-close-envelope:before { content: "\f100"; }
+.flaticon-folder:before { content: "\f101"; }
+.flaticon-home-icon-silhouette:before { content: "\f102"; }
+.flaticon-navigate-arrows-pointing-to-down:before { content: "\f103"; }
+.flaticon-people:before { content: "\f104"; }
+.flaticon-smartphone-call:before { content: "\f105"; }
+.flaticon-squares:before { content: "\f106"; }
     
-    $font-Flaticon-folder: "\f100";
-    $font-Flaticon-home-icon-silhouette: "\f101";
-    $font-Flaticon-navigate-arrows-pointing-to-down: "\f102";
-    $font-Flaticon-people: "\f103";
-    $font-Flaticon-squares: "\f104";
+    $font-Flaticon-close-envelope: "\f100";
+    $font-Flaticon-folder: "\f101";
+    $font-Flaticon-home-icon-silhouette: "\f102";
+    $font-Flaticon-navigate-arrows-pointing-to-down: "\f103";
+    $font-Flaticon-people: "\f104";
+    $font-Flaticon-smartphone-call: "\f105";
+    $font-Flaticon-squares: "\f106";
