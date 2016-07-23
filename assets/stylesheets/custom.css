@@ -129,7 +129,16 @@ g, path {
 
 @media (max-width: 768px) {
   body {
-    font-size: 11px; }
+    font-size: 11px;
+    overflow: scroll; }
+    body .menu {
+      display: none; }
+    body .top, body .approach, body .port, body .about-me {
+      position: relative;
+      height: auto;
+      top: auto; }
+    body .top, body .about-me {
+      height: 650px !important; }
     body .top-screen {
       height: 500px; }
     body .map-canvas {

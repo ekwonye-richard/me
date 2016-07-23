@@ -8,6 +8,24 @@ $desktop: "(min-width: 768px)";
 			size: 11px;
 		}
 
+		overflow: scroll;
+
+
+	.menu{
+		display: none;
+	}
+
+
+	.top, .approach, .port, .about-me{
+		position: relative;
+		height: auto;
+		top: auto;
+	}
+
+	.top, .about-me{
+		height: 650px !important;
+	}
+
 	.top-screen{
 		height: 500px;
 	}
