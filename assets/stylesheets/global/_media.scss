@@ -15,6 +15,9 @@ $desktop: "(min-width: 768px)";
 		display: none;
 	}
 
+	.p-item{
+	    height: 85vh;
+	}
 
 	.top, .approach, .port, .about-me{
 		position: relative;
@@ -22,12 +25,52 @@ $desktop: "(min-width: 768px)";
 		top: auto;
 	}
 
-	.top, .about-me{
-		height: 650px !important;
+	.port{
+		height: 100vh;
 	}
 
-	.top-screen{
-		height: 500px;
+	.day, .even, .nigh{
+	 @include day-bg('day-header-mobile', 400, 0);
+	}
+
+	.day-cycle{
+		display: none;
+	}
+
+	.top{
+		height: 100vh !important;
+	}
+
+	.top-corner{
+		margin: 50px 50px 170px;
+	}
+
+	.grt{
+
+		.hello{
+			font:{
+				size: 3.2em !important;
+			}
+		}
+
+		#weather{
+			h2{
+				font: {
+					size: 3em;
+				}
+			}
+		}
+	}
+
+	.me{
+		margin: -40px 40px;
+
+		.name{
+		display: block;
+		font: {
+			size: 3.5em;
+		}
+	}
 	}
 
 	.map-canvas{
@@ -42,13 +85,11 @@ $desktop: "(min-width: 768px)";
 		left: 70%;
 	}
 
-	.name{
-		display: block;
-	}
+
 
 	.des{
 		font: {
-			size: 1.4em !important;
+			size: 2.5em !important;
 		}
 
 	}
@@ -61,7 +102,70 @@ $desktop: "(min-width: 768px)";
 	}
 
 	.flow{
-		width: 180px;
+		width: 32vw;
+
+		svg{
+			max-width: 45%;
+		}
+
+		.flow-text{
+			margin: 10px 0;
+		}
+	}
+
+	.process-note{
+		min-height: 240px;
+	}
+
+	.process-logo{
+
+			img {
+	    width: 45px;
+		}
+	}
+
+	.popcons{
+	@include port-bg('popcons_banner-mobile');
+	}
+
+	.loral{
+		@include port-bg('loral_banner-mobile');
+	}
+
+	.jokerrr{
+		@include port-bg('jokerrr_banner-mobile');
+	}
+
+	.citidrive{
+		@include port-bg('citidrive_banner-mobile');
+	}
+
+	
+
+	.flex-direction-nav{
+		display: none;
+	}
+
+	.p-left{
+		position: absolute;
+		top: auto;
+		bottom: 0;
+	    width: 100%;
+	    padding: 15px;
+	    font-size: 2.6em;
+	    z-index: 100;
+	    background: $transBox;
+	    color: $ylw;
+	    height: 20vh;
+	}
+
+	.view-proj{
+		color: $ylw;
+	}
+
+	.p-right{
+		margin-left: 0;
+		width: 100vw;
 	}
 
 	.p-items{
@@ -74,9 +178,6 @@ $desktop: "(min-width: 768px)";
 
 		p{
 		padding: 0 10px;
-		font: {
-			size: 1.2em;
-		}
 		}
 	}
 
@@ -100,10 +201,25 @@ $desktop: "(min-width: 768px)";
 		}
 	}
 
-	.portfolio svg {
-	    width: 1.3em !important;
-	    margin: -2px 5px !important;
+	.port-top{
+		left: 0;
+
+		hr{
+			background: $ylw;
+		}
 	}
 
+	.portfolio {
+
+		.title{
+			color: $ylw;
+		}
+
+		svg {
+		    width: 1.3em !important;
+		    margin: -2px 5px !important;
+		}
+
+	}
 	}
 }

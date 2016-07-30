@@ -61,9 +61,11 @@ $imgPath: '../images';
     z-index: $index;
     opacity: $opa;
     background: url(#{$imgPath}/#{$bg}.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 @mixin port-bg($bg){
     background: url(#{$imgPath}/#{$bg}.jpg) no-repeat;
+    background-size: cover;
     background-blend-mode: luminosity;
 }

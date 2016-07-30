@@ -71,7 +71,7 @@ g, path {
     color: #f4ee6f;
     padding: 4px;
     margin: 0 15px;
-    font-size: 1.3em;
+    font-size: 1.55em;
     font-family: Fabrikat-regular; }
 
 .title {
@@ -133,14 +133,39 @@ g, path {
     overflow: scroll; }
     body .menu {
       display: none; }
+    body .p-item {
+      height: 85vh; }
     body .top, body .approach, body .port, body .about-me {
       position: relative;
       height: auto;
       top: auto; }
-    body .top, body .about-me {
-      height: 650px !important; }
-    body .top-screen {
-      height: 500px; }
+    body .port {
+      height: 100vh; }
+    body .day, body .even, body .nigh {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 400;
+      opacity: 0;
+      background: url(../images/day-header-mobile.jpg) no-repeat center center fixed;
+      background-size: cover; }
+    body .day-cycle {
+      display: none; }
+    body .top {
+      height: 100vh !important; }
+    body .top-corner {
+      margin: 50px 50px 170px; }
+    body .grt .hello {
+      font-size: 3.2em !important; }
+    body .grt #weather h2 {
+      font-size: 3em; }
+    body .me {
+      margin: -40px 40px; }
+      body .me .name {
+        display: block;
+        font-size: 3.5em; }
     body .map-canvas {
       overflow: hidden; }
       body .map-canvas svg {
@@ -148,22 +173,61 @@ g, path {
         height: auto; }
     body .f-row {
       left: 70%; }
-    body .name {
-      display: block; }
     body .des {
-      font-size: 1.4em !important; }
+      font-size: 2.5em !important; }
     body .ux {
       font-size: 1.7em !important; }
     body .flow {
-      width: 180px; }
+      width: 32vw; }
+      body .flow svg {
+        max-width: 45%; }
+      body .flow .flow-text {
+        margin: 10px 0; }
+    body .process-note {
+      min-height: 240px; }
+    body .process-logo img {
+      width: 45px; }
+    body .popcons {
+      background: url(../images/popcons_banner-mobile.jpg) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .loral {
+      background: url(../images/loral_banner-mobile.jpg) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .jokerrr {
+      background: url(../images/jokerrr_banner-mobile.jpg) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .citidrive {
+      background: url(../images/citidrive_banner-mobile.jpg) no-repeat;
+      background-size: cover;
+      background-blend-mode: luminosity; }
+    body .flex-direction-nav {
+      display: none; }
+    body .p-left {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      width: 100%;
+      padding: 15px;
+      font-size: 2.6em;
+      z-index: 100;
+      background: rgba(48, 51, 55, 0.42);
+      color: #f4ee6f;
+      height: 20vh; }
+    body .view-proj {
+      color: #f4ee6f; }
+    body .p-right {
+      margin-left: 0;
+      width: 100vw; }
     body .p-items {
       margin: 20px -160px;
       padding: 1px 0; }
     body .content {
       padding: 20px; }
       body .content p {
-        padding: 0 10px;
-        font-size: 1.2em; }
+        padding: 0 10px; }
     body .bx, body .bx2 {
       display: none !important; }
     body .tools-img {
@@ -174,6 +238,12 @@ g, path {
       font-weight: 800; }
       body .title svg {
         display: none; }
+    body .port-top {
+      left: 0; }
+      body .port-top hr {
+        background: #f4ee6f; }
+    body .portfolio .title {
+      color: #f4ee6f; }
     body .portfolio svg {
       width: 1.3em !important;
       margin: -2px 5px !important; } }
@@ -387,7 +457,6 @@ g, path {
     font-style: normal; }
 
 .top-screen {
-  overflow: hidden;
   z-index: 800;
   position: absolute;
   width: 100%; }
@@ -430,7 +499,8 @@ g, path {
   left: 0;
   z-index: 400;
   opacity: 0;
-  background: url(../images/day-header.jpg) no-repeat center center fixed; }
+  background: url(../images/day-header.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 .even {
   position: absolute;
@@ -440,7 +510,8 @@ g, path {
   left: 0;
   z-index: 380;
   opacity: 0;
-  background: url(../images/night-header.jpg) no-repeat center center fixed; }
+  background: url(../images/night-header.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 .nigh {
   position: absolute;
@@ -450,7 +521,8 @@ g, path {
   left: 0;
   z-index: 360;
   opacity: 1;
-  background: url(../images/midnight-header.jpg) no-repeat center center fixed; }
+  background: url(../images/midnight-header.jpg) no-repeat center center fixed;
+  background-size: cover; }
 
 .approach {
   position: absolute;
@@ -548,18 +620,22 @@ g, path {
 
 .popcons {
   background: url(../images/popcons_banner.jpg) no-repeat;
+  background-size: cover;
   background-blend-mode: luminosity; }
 
 .loral {
   background: url(../images/loral_banner.jpg) no-repeat;
+  background-size: cover;
   background-blend-mode: luminosity; }
 
 .jokerrr {
   background: url(../images/jokerrr_banner.jpg) no-repeat;
+  background-size: cover;
   background-blend-mode: luminosity; }
 
 .citidrive {
   background: url(../images/citidrive_banner.jpg) no-repeat;
+  background-size: cover;
   background-blend-mode: luminosity; }
 
 .p-items {
@@ -705,6 +781,7 @@ g, path {
   z-index: 200;
   opacity: 0;
   background: url(../images/me-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
   opacity: 1 !important; }
 
 .wht-mask {
@@ -718,9 +795,7 @@ g, path {
 
 .me-data {
   z-index: 400;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 250%; }
 

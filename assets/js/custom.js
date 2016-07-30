@@ -2,6 +2,8 @@ $(window).load(function() {
     $(".loading").fadeOut("fast");
   });
 
+
+
 $(document).ready(function() {
 
   var d = new Date();
