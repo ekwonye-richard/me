@@ -33,6 +33,10 @@ $desktop: "(min-width: 768px)";
 	 @include day-bg('day-header-mobile', 400, 0);
 	}
 
+	.nigh{
+		opacity: 1;
+	}
+
 	.day-cycle{
 		display: none;
 	}

@@ -151,6 +151,8 @@ g, path {
       opacity: 0;
       background: url(../images/day-header-mobile.jpg) no-repeat center center fixed;
       background-size: cover; }
+    body .nigh {
+      opacity: 1; }
     body .day-cycle {
       display: none; }
     body .top {
