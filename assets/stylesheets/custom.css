@@ -21,8 +21,16 @@
 @font-face {
   font-family: Weather;
   src: url(fonts/artill_clean_icons-webfont.ttf); }
+::-webkit-scrollbar {
+  display: none; }
+
+html {
+  -ms-overflow-style: none; }
+
+html {
+  overflow: -moz-scrollbars-none; }
+
 body {
-  overflow: hidden;
   background: #303337;
   font-family: Metric-Light;
   font-size: 14px;
@@ -615,10 +623,10 @@ g, path {
 
 .p-right {
   position: absolute;
-  margin-left: 18vw;
+  margin: 0 1vw 0 33vw;
   z-index: 99;
-  width: 82vw;
-  height: 100%; }
+  width: 66vw;
+  height: 88%; }
 
 .popcons {
   background: url(../images/popcons_banner.jpg) no-repeat;

@@ -3,7 +3,6 @@ $(window).load(function() {
   });
 
 
-
 $(document).ready(function() {
 
   var d = new Date();
@@ -63,6 +62,8 @@ $(document).ready(function() {
   });
 
 });
+
+
 
 $(function(){  
 

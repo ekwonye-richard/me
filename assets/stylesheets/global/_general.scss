@@ -1,5 +1,13 @@
+::-webkit-scrollbar {
+display: none;
+}
+
+html { -ms-overflow-style: none; }
+
+html { overflow: -moz-scrollbars-none; }
+
+
 body{
-	overflow: hidden;
 	background: $secColor;
 	font: {
 		family: $mainFont;
@@ -14,6 +22,7 @@ body{
 img{
 	max-width: 95%;
 }
+
 
 g, path{
 	pointer-events:all;
