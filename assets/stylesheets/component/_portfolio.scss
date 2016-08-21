@@ -11,17 +11,26 @@
 
 	.title{
 	padding:0 35px !important;
-	font: {
-		family: $mainFont;
-	}
+	
 	}
 
 	svg{
-	width: 1.3em !important;
-    margin: -7px 5px !important;
+	width: 25px !important;
+    margin: 5px !important;
 	}
 }
 
+
+.port-tool-set{
+	display: none !important;
+	position: absolute;
+	top: 40vh;
+	z-index: 0;
+
+		svg{
+			fill: $darkGrey;
+		}
+}
 
 
 .p-item{
@@ -37,6 +46,8 @@
 .p-left{
 	position: absolute;
     top: 50px;
+    width: 28vw;
+    height: 88%;
     padding: 70px 0 0 90px;
     font-size: 3.3em;
     z-index: 100;
@@ -62,6 +73,73 @@
 	height: 88%;
 
 }
+
+.bg-iconx{
+	position: absolute;
+}
+
+.bg-icon1{
+	top: 30px;
+	left: 140px;
+}
+
+.bg-icon2{
+	top: 40px;
+	left: 230px;
+}
+
+.bg-icon3{
+	top: 40px;
+	left: 310px;
+}
+
+.bg-icon4{
+	top: 40px;
+	left: 400px;
+}
+
+.bg-icon5{
+	top: 130px;
+	left: 140px;
+}
+
+.bg-icon6{
+	top: 130px;
+	left: 230px;
+}
+
+.bg-icon7{
+	top: 130px;
+	left: 310px;
+}
+
+.bg-icon8{
+	top: 130px;
+	left: 400px;
+}
+
+.bg-icon9{
+	top: 230px;
+	left: 140px;
+}
+
+.bg-icon10{
+	top: 230px;
+	left: 230px;
+}
+
+.bg-icon11{
+	top: 230px;
+	left: 310px;
+}
+
+.bg-icon12{
+	top: 230px;
+	left: 400px;
+}
+
+
+
 
 
 .popcons{
